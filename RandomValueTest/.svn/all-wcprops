@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/CCT4/!svn/ver/1028/trunk/Source/3rdParty/RandomValue/RandomValueTest
+END
+AuthoringTests.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CCT4/!svn/ver/1028/trunk/Source/3rdParty/RandomValue/RandomValueTest/AuthoringTests.txt
+END
+RandomValueTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CCT4/!svn/ver/1028/trunk/Source/3rdParty/RandomValue/RandomValueTest/RandomValueTest.cs
+END
+RandomNameTest.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CCT4/!svn/ver/1028/trunk/Source/3rdParty/RandomValue/RandomValueTest/RandomNameTest.cs
+END
+RandomValueTest.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CCT4/!svn/ver/1028/trunk/Source/3rdParty/RandomValue/RandomValueTest/RandomValueTest.csproj
+END
