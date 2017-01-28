@@ -104,7 +104,230 @@ Package is available on nuget.
 
 ## API Reference
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+Syntax
+C#
+public static class RandomValue
+
+The RandomValue type exposes the following members.
+Methods
+	Name	Description
+  	GetRandomEnumValue(T)
+Returns a random value of the specified enumeration type.
+  	Next()
+Returns a random System.Int32.
+  	Next(Int32)
+Returns a random System.Int32 that is less than or equal to the specified maximum.
+  	Next(Int32, Int32)
+Returns a random System.Int32 that is within a specified range.
+  	Next(T)()
+Returns a random value greater than or equal to the mimnimum supported value and less than the maximum supported value of T.
+  	Next(T)(T)
+Returns a random value that is less than the specified maximum.
+  	Next(T)(T, T)
+Returns a random value that is within a specified range.
+  	NextBoolean()
+Returns a random Boolean value.
+  	NextBoolean(Boolean)
+Returns a random Boolean value that is less than or equal to the specified maximum.
+  	NextBoolean(Boolean, Boolean)
+Returns a random Boolean value that is within a specified range.
+  	NextByte()
+Returns a random System.Byte.
+  	NextByte(Byte)
+Returns a random System.Byte that is less than or equal to the specified maximum.
+  	NextByte(Byte, Byte)
+Returns a random System.Byte that is within a specified range.
+  	NextChar()
+Returns a random System.Char.
+  	NextChar(Char)
+Returns a random System.Char that is less than or equal to the specified maximum.
+  	NextChar(Char, Char)
+Returns a random System.Char that is within a specified range.
+  	NextDateTime()
+Returns a random System.DateTime.
+  	NextDateTime(DateTime)
+Returns a random System.DateTime that is less than or equal to the specified maximum.
+  	NextDateTime(DateTime, DateTime)
+Returns a random System.DateTime that is within a specified range.
+  	NextDecimal()
+Returns a random System.Decimal.
+  	NextDecimal(Decimal)
+Returns a random System.Decimal that is less than or equal to the specified maximum.
+  	NextDecimal(Decimal, Decimal)
+Returns a random System.Decimal that is within a specified range.
+  	NextDouble()
+Returns a random System.Double.
+  	NextDouble(Double)
+Returns a random System.Double that is less than or equal to the specified maximum.
+  	NextDouble(Double, Double)
+Returns a random System.Double that is within a specified range.
+  	NextInt16()
+Returns a random System.Int16.
+  	NextInt16(Int16)
+Returns a random System.Int16 that is less than or equal to the specified maximum.
+  	NextInt16(Int16, Int16)
+Returns a random System.Int16 that is within a specified range.
+  	NextInt32()
+Returns a random System.Int32.
+  	NextInt32(Int32)
+Returns a random System.Int32 that is less than or equal to the specified maximum.
+  	NextInt32(Int32, Int32)
+Returns a random System.Int32 that is within a specified range.
+  	NextInt64()
+Returns a random System.Int64.
+  	NextInt64(Int64)
+Returns a random System.Int64 that is less than or equal to the specified maximum.
+  	NextInt64(Int64, Int64)
+Returns a random System.Int64 that is within a specified range.
+  	NextNullable(T)(Boolean, Byte)
+Returns a random System.Nullable<T>.
+  	NextNullable(T)(T, Boolean, Byte)
+Returns a random System.Nullable<T>.
+  	NextNullable(T)(T, T, Boolean, Byte)
+Returns a random System.Nullable<T>.
+  	NextSByte()
+Returns a random System.SByte.
+  	NextSByte(SByte)
+Returns a random System.SByte that is less than or equal to the specified maximum.
+  	NextSByte(SByte, SByte)
+Returns a random System.SByte that is within a specified range.
+  	NextSingle()
+Returns a random System.Single.
+  	NextSingle(Single)
+Returns a random System.Single that is less than or equal to the specified maximum.
+  	NextSingle(Single, Single)
+Returns a random System.Single that is within a specified range.
+  	NextUInt16()
+Returns a random System.UInt16.
+  	NextUInt16(UInt16)
+Returns a random System.UInt16 that is less than or equal to the specified maximum.
+  	NextUInt16(UInt16, UInt16)
+Returns a random System.UInt16 that is within a specified range.
+  	NextUInt32()
+Returns a random System.UInt32.
+  	NextUInt32(UInt32)
+Returns a random System.UInt32 that is less than or equal to the specified maximum.
+  	NextUInt32(UInt32, UInt32)
+Returns a random System.UInt32 that is within a specified range.
+  	NextUInt64()
+Returns a random System.UInt64.
+  	NextUInt64(UInt64)
+Returns a random System.UInt64 that is less than or equal to the specified maximum.
+  	NextUInt64(UInt64, UInt64)
+Returns a random System.UInt64 that is within a specified range.
+
+See Also
+Eric.Morrison Namespace
+?
+RandomValue.RandomValue Methods
+The RandomValue type exposes the following members.
+Methods
+	Name	Description
+  	GetRandomEnumValue(T)
+Returns a random value of the specified enumeration type.
+  	Next()
+Returns a random System.Int32.
+  	Next(Int32)
+Returns a random System.Int32 that is less than or equal to the specified maximum.
+  	Next(Int32, Int32)
+Returns a random System.Int32 that is within a specified range.
+  	Next(T)()
+Returns a random value greater than or equal to the mimnimum supported value and less than the maximum supported value of T.
+  	Next(T)(T)
+Returns a random value that is less than the specified maximum.
+  	Next(T)(T, T)
+Returns a random value that is within a specified range.
+  	NextBoolean()
+Returns a random Boolean value.
+  	NextBoolean(Boolean)
+Returns a random Boolean value that is less than or equal to the specified maximum.
+  	NextBoolean(Boolean, Boolean)
+Returns a random Boolean value that is within a specified range.
+  	NextByte()
+Returns a random System.Byte.
+  	NextByte(Byte)
+Returns a random System.Byte that is less than or equal to the specified maximum.
+  	NextByte(Byte, Byte)
+Returns a random System.Byte that is within a specified range.
+  	NextChar()
+Returns a random System.Char.
+  	NextChar(Char)
+Returns a random System.Char that is less than or equal to the specified maximum.
+  	NextChar(Char, Char)
+Returns a random System.Char that is within a specified range.
+  	NextDateTime()
+Returns a random System.DateTime.
+  	NextDateTime(DateTime)
+Returns a random System.DateTime that is less than or equal to the specified maximum.
+  	NextDateTime(DateTime, DateTime)
+Returns a random System.DateTime that is within a specified range.
+  	NextDecimal()
+Returns a random System.Decimal.
+  	NextDecimal(Decimal)
+Returns a random System.Decimal that is less than or equal to the specified maximum.
+  	NextDecimal(Decimal, Decimal)
+Returns a random System.Decimal that is within a specified range.
+  	NextDouble()
+Returns a random System.Double.
+  	NextDouble(Double)
+Returns a random System.Double that is less than or equal to the specified maximum.
+  	NextDouble(Double, Double)
+Returns a random System.Double that is within a specified range.
+  	NextInt16()
+Returns a random System.Int16.
+  	NextInt16(Int16)
+Returns a random System.Int16 that is less than or equal to the specified maximum.
+  	NextInt16(Int16, Int16)
+Returns a random System.Int16 that is within a specified range.
+  	NextInt32()
+Returns a random System.Int32.
+  	NextInt32(Int32)
+Returns a random System.Int32 that is less than or equal to the specified maximum.
+  	NextInt32(Int32, Int32)
+Returns a random System.Int32 that is within a specified range.
+  	NextInt64()
+Returns a random System.Int64.
+  	NextInt64(Int64)
+Returns a random System.Int64 that is less than or equal to the specified maximum.
+  	NextInt64(Int64, Int64)
+Returns a random System.Int64 that is within a specified range.
+  	NextNullable(T)(Boolean, Byte)
+Returns a random System.Nullable<T>.
+  	NextNullable(T)(T, Boolean, Byte)
+Returns a random System.Nullable<T>.
+  	NextNullable(T)(T, T, Boolean, Byte)
+Returns a random System.Nullable<T>.
+  	NextSByte()
+Returns a random System.SByte.
+  	NextSByte(SByte)
+Returns a random System.SByte that is less than or equal to the specified maximum.
+  	NextSByte(SByte, SByte)
+Returns a random System.SByte that is within a specified range.
+  	NextSingle()
+Returns a random System.Single.
+  	NextSingle(Single)
+Returns a random System.Single that is less than or equal to the specified maximum.
+  	NextSingle(Single, Single)
+Returns a random System.Single that is within a specified range.
+  	NextUInt16()
+Returns a random System.UInt16.
+  	NextUInt16(UInt16)
+Returns a random System.UInt16 that is less than or equal to the specified maximum.
+  	NextUInt16(UInt16, UInt16)
+Returns a random System.UInt16 that is within a specified range.
+  	NextUInt32()
+Returns a random System.UInt32.
+  	NextUInt32(UInt32)
+Returns a random System.UInt32 that is less than or equal to the specified maximum.
+  	NextUInt32(UInt32, UInt32)
+Returns a random System.UInt32 that is within a specified range.
+  	NextUInt64()
+Returns a random System.UInt64.
+  	NextUInt64(UInt64)
+Returns a random System.UInt64 that is less than or equal to the specified maximum.
+  	NextUInt64(UInt64, UInt64)
+Returns a random System.UInt64 that is within a specified range.
+
 
 ## Tests
 
