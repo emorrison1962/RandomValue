@@ -6,6 +6,9 @@ using System.Text;
 
 namespace Eric.Morrison
 {
+	/// <summary>
+	/// RandomString creates random strings. All characters in the string are limited to printable characters.
+	/// </summary>
 	public class RandomString
 	{
 		#region Constants
@@ -20,7 +23,7 @@ namespace Eric.Morrison
 
 		#region Properties
 
-		static public Random Random
+		static Random Random
 		{
 			get { return _random; }
 		} static Random _random = new Random(Environment.TickCount);
@@ -28,15 +31,33 @@ namespace Eric.Morrison
 		#endregion Properties
 
 		#region Implementation
-		static public string Get(Int32 minLength, Int32 maxLength)
+		/// <summary>
+		/// Returns a random String value that is within a specified length.
+		/// </summary>
+		/// <param name="minLength">The inclusive lower bound of the length of the String returned.</param>
+		/// <param name="maxLength">The exclsuve upper bound of the the length of the String returned.</param>
+		/// <param name="alphaOnly">Optional flag to specify alpha characters only.</param>
+		/// <returns>A random String value that is within a specified length.</returns>
+		static public string Get(UInt32 minLength, UInt32 maxLength, bool alphaOnly = false)
 		{
-			return RandomString.Get(RandomValue.Next(minLength, maxLength));
+			return RandomString.Get(RandomValue.Next(minLength, maxLength), alphaOnly);
 		}
 
-		static public string Get(int length)
+		/// <summary>
+		/// Returns a random String value of the specified length.
+		/// </summary>
+		/// <param name="length">Length of String to return.</param>
+		/// <param name="alphaOnly">Optional flag to specify alpha characters only.</param>
+		/// <returns>A random String value of the specified length.</returns>
+		static public string Get(UInt32 length, bool alphaOnly = false)
 		{
 			string result = string.Empty;
-			if (length > 0)
+
+			if (alphaOnly)
+			{
+				result = GetAlphaOnly(length);
+			}
+			else if (length > 0)
 			{
 				char[] chars = new char[length];
 				for (int i = 0; i < length; ++i)
@@ -46,7 +67,12 @@ namespace Eric.Morrison
 			return result;
 		}
 
-		static public string GetCharsOnly(int length)
+		/// <summary>
+		/// Returns a random String value of the specified length, containing only alphabetic characters.
+		/// </summary>
+		/// <param name="length">Length of String to return.</param>
+		/// <returns>A random String value of the specified length, containing only alphabetic characters.</returns>
+		static public string GetAlphaOnly(UInt32 length)
 		{
 			string result = string.Empty;
 			if (length > 0)

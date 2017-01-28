@@ -9,6 +9,9 @@ using System.Diagnostics;
 
 namespace Eric.Morrison
 {
+	/// <summary>
+	/// RandomName creates random first and/or last names.
+	/// </summary>
 	public static class RandomName
 	{
 		class FirstName
@@ -21,10 +24,23 @@ namespace Eric.Morrison
 				this.Gender = gender;
 			}
 		}
+		
+		/// <summary>
+		/// Gender enum is used to specify the gender of the requested first name.
+		/// </summary>
 		public enum Gender
 		{
+			/// <summary>
+			/// 
+			/// </summary>
 			Male,
+			/// <summary>
+			/// 
+			/// </summary>
 			Female,
+			/// <summary>
+			/// 
+			/// </summary>
 			Either
 		};
 
@@ -76,7 +92,6 @@ namespace Eric.Morrison
 
 		#endregion Properties
 
-
 		static RandomName() 
 		{
 			try
@@ -88,11 +103,6 @@ namespace Eric.Morrison
 				Debug.Assert(false, ex.Message);
 			}
 		}
-
-		//public RandomName(Gender gender) 
-		//{
-		//    _gender = gender;
-		//}
 
 		static void LoadNames()
 		{
@@ -138,6 +148,11 @@ namespace Eric.Morrison
 			return ds;
 		}
 
+		/// <summary>
+		/// Returns a random first name of the specified gender.
+		/// </summary>
+		/// <param name="gender">Optional parameter to narrow the gender specificity of the name.</param>
+		/// <returns>A random first name of the specified gender.</returns>
 		static public string NextFirst(Gender gender = Gender.Either)
 		{
 			List<FirstName> firstNames = null;
@@ -153,12 +168,21 @@ namespace Eric.Morrison
 			return firstNames[i].First;
 		}
 
+		/// <summary>
+		/// Returns a random last name.
+		/// </summary>
+		/// <returns>A random last name.</returns>
 		static public string NextLast()
 		{
 			int i = RandomValue.Next<Int32>(0, LastNames.Count);
 			return LastNames[i];
 		}
 
+		/// <summary>
+		/// Returns a random first and last name, separated by a space.
+		/// </summary>
+		/// <param name="gender">Optional parameter to narrow the gender specificity of the name.</param>
+		/// <returns>A a random first and last name, separated by a space.</returns>
 		static public string NextFirstAndLast(Gender gender = Gender.Either)
 		{
 			return string.Format("{0} {1}", NextFirst(gender), NextLast());

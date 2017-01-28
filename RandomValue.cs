@@ -192,7 +192,6 @@ namespace Eric.Morrison
 		/// <summary>
 		/// Returns a random Boolean value.
 		/// </summary>
-		/// <typeparam name="T">The type of value to return.</typeparam>
 		/// <returns>A random Boolean value.</returns>
 		static public bool NextBoolean()
 		{
@@ -234,16 +233,31 @@ namespace Eric.Morrison
 
 		#region SByte
 
+		/// <summary>
+		/// Returns a random System.SByte.
+		/// </summary>
+		/// <returns>A random System.SByte.</returns>
 		static public SByte NextSByte()
 		{
 			return RandomValue.NextSByte(SByte.MinValue, SByte.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.SByte that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.SByte that is less than or equal to the specified maximum.</returns>
 		static public SByte NextSByte(SByte maxValue)
 		{
 			return RandomValue.NextSByte(SByte.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.SByte that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.SByte greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public SByte NextSByte(SByte minValue, SByte maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -254,16 +268,31 @@ namespace Eric.Morrison
 
 		#region Byte
 
+		/// <summary>
+		/// Returns a random System.Byte.
+		/// </summary>
+		/// <returns>A random System.Byte.</returns>
 		static public Byte NextByte()
 		{
 			return RandomValue.NextByte(Byte.MinValue, Byte.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Byte that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Byte that is less than or equal to the specified maximum.</returns>
 		static public Byte NextByte(Byte maxValue)
 		{
 			return RandomValue.NextByte(Byte.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Byte that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Byte greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Byte NextByte(Byte minValue, Byte maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -274,16 +303,31 @@ namespace Eric.Morrison
 
 		#region Char
 
+		/// <summary>
+		/// Returns a random System.Char.
+		/// </summary>
+		/// <returns>A random System.Char.</returns>
 		static public Char NextChar()
 		{
 			return RandomValue.NextChar(Char.MinValue, Char.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Char that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Char that is less than or equal to the specified maximum.</returns>
 		static public Char NextChar(Char maxValue)
 		{
 			return RandomValue.NextChar(Char.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Char that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Char greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Char NextChar(Char minValue, Char maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -294,16 +338,31 @@ namespace Eric.Morrison
 
 		#region Int16
 
+		/// <summary>
+		/// Returns a random System.Int16.
+		/// </summary>
+		/// <returns>A random System.Int16.</returns>
 		static public Int16 NextInt16()
 		{
 			return RandomValue.NextInt16(Int16.MinValue, Int16.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int16 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Int16 that is less than or equal to the specified maximum.</returns>
 		static public Int16 NextInt16(Int16 maxValue)
 		{
 			return RandomValue.NextInt16(Int16.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int16 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Int16 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Int16 NextInt16(Int16 minValue, Int16 maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -314,16 +373,31 @@ namespace Eric.Morrison
 
 		#region UInt16
 
+		/// <summary>
+		/// Returns a random System.UInt16.
+		/// </summary>
+		/// <returns>A random System.UInt16.</returns>
 		static public UInt16 NextUInt16()
 		{
 			return RandomValue.NextUInt16(UInt16.MinValue, UInt16.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.UInt16 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.UInt16 that is less than or equal to the specified maximum.</returns>
 		static public UInt16 NextUInt16(UInt16 maxValue)
 		{
 			return RandomValue.NextUInt16(UInt16.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.UInt16 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.UInt16 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public UInt16 NextUInt16(UInt16 minValue, UInt16 maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -334,31 +408,61 @@ namespace Eric.Morrison
 
 		#region Int32
 
+		/// <summary>
+		/// Returns a random System.Int32.
+		/// </summary>
+		/// <returns>A random System.Int32.</returns>
 		static public Int32 Next()
 		{
 			return RandomValue.NextInt32();
 		}
 
+		/// <summary>
+		/// Returns a random System.Int32 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Int32 that is less than or equal to the specified maximum.</returns>
 		static public Int32 Next(Int32 maxValue)
 		{
 			return RandomValue.NextInt32(maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int32 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Int32 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Int32 Next(Int32 minValue, Int32 maxValue)
 		{
 			return RandomValue.NextInt32(minValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int32.
+		/// </summary>
+		/// <returns>A random System.Int32.</returns>
 		static public Int32 NextInt32()
 		{
 			return RandomValue.NextInt32(Int32.MinValue, Int32.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int32 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Int32 that is less than or equal to the specified maximum.</returns>
 		static public Int32 NextInt32(Int32 maxValue)
 		{
 			return RandomValue.NextInt32(Int32.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int32 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Int32 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Int32 NextInt32(Int32 minValue, Int32 maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -369,16 +473,31 @@ namespace Eric.Morrison
 
 		#region UInt32
 
+		/// <summary>
+		/// Returns a random System.UInt32.
+		/// </summary>
+		/// <returns>A random System.UInt32.</returns>
 		static public UInt32 NextUInt32()
 		{
 			return RandomValue.NextUInt32(UInt32.MinValue, UInt32.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.UInt32 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.UInt32 that is less than or equal to the specified maximum.</returns>
 		static public UInt32 NextUInt32(UInt32 maxValue)
 		{
 			return RandomValue.NextUInt32(UInt32.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.UInt32 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.UInt32 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public UInt32 NextUInt32(UInt32 minValue, UInt32 maxValue)
 		{
 			int cb = Marshal.SizeOf(typeof(UInt32));
@@ -394,16 +513,31 @@ namespace Eric.Morrison
 
 		#region Int64
 
+		/// <summary>
+		/// Returns a random System.Int64.
+		/// </summary>
+		/// <returns>A random System.Int64.</returns>
 		static public Int64 NextInt64()
 		{
 			return RandomValue.NextInt64(Int64.MinValue, Int64.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int64 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Int64 that is less than or equal to the specified maximum.</returns>
 		static public Int64 NextInt64(Int64 maxValue)
 		{
 			return RandomValue.NextInt64(Int64.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Int64 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Int64 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Int64 NextInt64(Int64 minValue, Int64 maxValue)
 		{
 			int cb = Marshal.SizeOf(typeof(Int64));
@@ -419,16 +553,31 @@ namespace Eric.Morrison
 
 		#region UInt64
 
+		/// <summary>
+		/// Returns a random System.UInt64.
+		/// </summary>
+		/// <returns>A random System.UInt64.</returns>
 		static public UInt64 NextUInt64()
 		{
 			return RandomValue.NextUInt64(UInt64.MinValue, UInt64.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.UInt64 that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.UInt64 that is less than or equal to the specified maximum.</returns>
 		static public UInt64 NextUInt64(UInt64 maxValue)
 		{
 			return RandomValue.NextUInt64(UInt64.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.UInt64 that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.UInt64 greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public UInt64 NextUInt64(UInt64 minValue, UInt64 maxValue)
 		{
 			int cb = Marshal.SizeOf(typeof(UInt64));
@@ -444,16 +593,31 @@ namespace Eric.Morrison
 
 		#region Decimal
 
+		/// <summary>
+		/// Returns a random System.Decimal.
+		/// </summary>
+		/// <returns>A random System.Decimal.</returns>
 		static public Decimal NextDecimal()
 		{
 			return RandomValue.NextDecimal(Decimal.MinValue, Decimal.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Decimal that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Decimal that is less than or equal to the specified maximum.</returns>
 		static public Decimal NextDecimal(Decimal maxValue)
 		{
 			return RandomValue.NextDecimal(Decimal.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Decimal that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Decimal greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Decimal NextDecimal(Decimal minValue, Decimal maxValue)
 		{
 			int cb = Marshal.SizeOf(typeof(Decimal));
@@ -491,16 +655,31 @@ namespace Eric.Morrison
 
 		#region Single
 
+		/// <summary>
+		/// Returns a random System.Single.
+		/// </summary>
+		/// <returns>A random System.Single.</returns>
 		static public Single NextSingle()
 		{
 			return RandomValue.NextSingle(Single.MinValue, Single.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Single that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Single that is less than or equal to the specified maximum.</returns>
 		static public Single NextSingle(Single maxValue)
 		{
 			return RandomValue.NextSingle(Single.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Single that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Single greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Single NextSingle(Single minValue, Single maxValue)
 		{
 			int cb = Marshal.SizeOf(typeof(Single));
@@ -518,16 +697,31 @@ namespace Eric.Morrison
 
 		#region Double
 
+		/// <summary>
+		/// Returns a random System.Double.
+		/// </summary>
+		/// <returns>A random System.Double.</returns>
 		static public Double NextDouble()
 		{
 			return RandomValue.NextDouble(Double.MinValue, Double.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Double that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.Double that is less than or equal to the specified maximum.</returns>
 		static public Double NextDouble(Double maxValue)
 		{
 			return RandomValue.NextDouble(Double.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.Double that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.Double greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public Double NextDouble(Double minValue, Double maxValue)
 		{
 			int cb = Marshal.SizeOf(typeof(Double));
@@ -543,16 +737,31 @@ namespace Eric.Morrison
 
 		#region DateTime
 
+		/// <summary>
+		/// Returns a random System.DateTime.
+		/// </summary>
+		/// <returns>A random System.DateTime.</returns>
 		static public DateTime NextDateTime()
 		{
 			return NextDateTime(DateTime.MinValue, DateTime.MaxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.DateTime that is less than or equal to the specified maximum.
+		/// </summary>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <returns>A random System.DateTime that is less than or equal to the specified maximum.</returns>
 		static public DateTime NextDateTime(DateTime maxValue)
 		{
 			return NextDateTime(DateTime.MinValue, maxValue);
 		}
 
+		/// <summary>
+		/// Returns a random System.DateTime that is within a specified range.
+		/// </summary>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random number returned.</param>
+		/// <returns>A System.DateTime greater than or equal to minValue and less than or equal to maxValue.</returns>
 		static public DateTime NextDateTime(DateTime minValue, DateTime maxValue)
 		{
 			NormalizeInput(ref minValue, ref maxValue);
@@ -587,6 +796,13 @@ namespace Eric.Morrison
 
 		#endregion DateTime
 
+		/// <summary>
+		/// Returns a random System.Nullable&lt;T&gt;.
+		/// </summary>
+		/// <typeparam name="T">Generic type parameter.</typeparam>
+		/// <param name="limitNulls">Flage to limit the amount of null values returned by the method.</param>
+		/// <param name="percentageOfNulls">Used in combination with the "limitNulls" parameter. If "limitNulls" is true, percentageOfNulls specifies the probability that the return value will be null.</param>
+		/// <returns>A random System.Nullable&lt;T&gt;.</returns>
 		static public Nullable<T> NextNullable<T>(bool limitNulls, byte percentageOfNulls = 50) where T : struct, IConvertible
 		{
 			var min = GetMinValue<T>();
@@ -594,13 +810,30 @@ namespace Eric.Morrison
 			return NextNullable(min, max, limitNulls, percentageOfNulls);
 		}
 
-		static public Nullable<T> NextNullable<T>(T max, bool limitNulls, byte percentageOfNulls = 50) where T : struct, IConvertible
+		/// <summary>
+		/// Returns a random System.Nullable&lt;T&gt;.
+		/// </summary>
+		/// <typeparam name="T">Generic type parameter.</typeparam>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <param name="limitNulls">Flage to limit the amount of null values returned by the method.</param>
+		/// <param name="percentageOfNulls">Used in combination with the "limitNulls" parameter. If "limitNulls" is true, percentageOfNulls specifies the probability that the return value will be null.</param>
+		/// <returns>A random System.Nullable&lt;T&gt;.</returns>
+		static public Nullable<T> NextNullable<T>(T maxValue, bool limitNulls, byte percentageOfNulls = 50) where T : struct, IConvertible
 		{
-			var min = GetMinValue<T>();
-			return NextNullable(min, max, limitNulls, percentageOfNulls);
+			var minValue = GetMinValue<T>();
+			return NextNullable(minValue, maxValue, limitNulls, percentageOfNulls);
 		}
 
-		static public Nullable<T> NextNullable<T>(T min, T max, bool limitNulls, byte percentageOfNulls = 50) where T : struct, IConvertible
+		/// <summary>
+		/// Returns a random System.Nullable&lt;T&gt;.
+		/// </summary>
+		/// <typeparam name="T">Generic type parameter.</typeparam>
+		/// <param name="minValue">The inclusive lower bound of the random number returned.</param>
+		/// <param name="maxValue">The inclusive upper bound of the random value to be generated.</param>
+		/// <param name="limitNulls">Flage to limit the amount of null values returned by the method.</param>
+		/// <param name="percentageOfNulls">Used in combination with the "limitNulls" parameter. If "limitNulls" is true, percentageOfNulls specifies the probability that the return value will be null.</param>
+		/// <returns>A random System.Nullable&lt;T&gt;.</returns>
+		static public Nullable<T> NextNullable<T>(T minValue, T maxValue, bool limitNulls, byte percentageOfNulls = 50) where T : struct, IConvertible
 		{
 			if (100 < percentageOfNulls)
 			{
@@ -616,14 +849,25 @@ namespace Eric.Morrison
 				}
 				else
 				{
-					result = Next<T>(min, max);
+					result = Next<T>(minValue, maxValue);
 				}
 			}
 			else
 			{
-				result = Next<T>(min, max);
+				result = Next<T>(minValue, maxValue);
 			}
 			return result;
+		}
+
+		/// <summary>
+		/// Returns a random value of the specified enumeration type.
+		/// </summary>
+		/// <typeparam name="T">The type of enum value to return.</typeparam>
+		/// <returns>A random value of the specified enumeration type.</returns>
+		static public T GetRandomEnumValue<T>()
+		{
+			Array arr = Enum.GetValues(typeof(T));
+			return (T)arr.GetValue(RandomValue.Next(0, arr.Length));
 		}
 
 		static void NormalizeInput<T>(ref T minValue, ref T maxValue) where T : struct, IComparable
@@ -654,13 +898,7 @@ namespace Eric.Morrison
 			}
 		}
 
-		static public T GetRandomEnumValue<T>()
-		{
-			Array arr = Enum.GetValues(typeof(T));
-			return (T)arr.GetValue(RandomValue.Next(0, arr.Length));
-		}
-
-		static public T GetMinValue<T>() where T : struct
+		static T GetMinValue<T>() where T : struct
 		{
 			T result = default(T);
 			if (typeof(T) == typeof(bool))
@@ -676,7 +914,7 @@ namespace Eric.Morrison
 			return result;
 		}
 
-		static public T GetMaxValue<T>() where T : struct, IConvertible
+		static T GetMaxValue<T>() where T : struct, IConvertible
 		{
 			T result = default(T);
 			if (typeof(T) == typeof(bool))
@@ -691,8 +929,6 @@ namespace Eric.Morrison
 			}
 			return result;
 		}
-
-
-	}
-}
+	}//class
+}//ns
 
