@@ -7,7 +7,7 @@ RandomValue is a utility library that contains classes for generating random dat
 ## Code Example
 
 		class Address
-		{
+		{// demonstration class
 			public string Name { get; set; }
 			public string AddressLineOne { get; set; }
 			public string AddressLineTwo { get; set; }
@@ -31,20 +31,25 @@ RandomValue is a utility library that contains classes for generating random dat
 		public void AddressTest()
 		{
 			var streets = new List<string>() { "Alma Rd", "Park Blvd", "Parker Rd", "Elm St", "Main St" };
+			var randomStreets = new RandomList<string>(streets);  //RandomList usage
 			var cities = new List<string>() { "Dallas", "Austin", "Corpus Cristi", "El Paso", "Abeleine" };
+			var randomCities = new RandomList<string>(cities);    //RandomList usage
 			var states = new List<string>() { "TX", "OK" };
-			var randomStreets = new RandomList<string>(streets);
-			var randomCities = new RandomList<string>(cities);
-			var randomStates = new RandomList<string>(states);
+			var randomStates = new RandomList<string>(states);    //RandomList usage
 			const int MAX = 100;
 			for (int i = 0; i < MAX; ++i)
 			{
 				var address = new Address
 				{
-					Name = RandomName.NextFirstAndLast(RandomName.Gender.Either),
+					//RandomName usage....
+					Name = RandomName.NextFirstAndLast(RandomName.Gender.Either), 
+					//RandomValue usage....
 					AddressLineOne = string.Format("{0} {1}", RandomValue.Next(100, 20000), randomStreets.Next()),
+					//RandomList usage....
 					City = randomCities.Next(),
+					//RandomList usage....
 					State = randomStates.Next(),
+					//RandomValue usage....
 					ZipCode = RandomValue.Next(10000, 99999).ToString()
 				};
 
@@ -52,6 +57,40 @@ RandomValue is a utility library that contains classes for generating random dat
 				Debug.WriteLine(String.Empty);
 			}
 		}
+
+OUTPUT: 
+Corey Owens
+12827 Alma Rd
+Dallas, OK 67959
+
+Jace Moon
+3048 Main St
+El Paso, OK 36975
+
+Isaiah Jennings
+11081 Elm St
+Corpus Cristi, OK 13567
+
+Miles Thompson
+2504 Main St
+Corpus Cristi, TX 31632
+
+Johnny Solis
+9441 Park Blvd
+Abeleine, OK 10723
+
+Julian Rhodes
+18947 Elm St
+Austin, TX 32453
+
+Davion Peters
+16346 Elm St
+El Paso, TX 19619
+
+Emiliano Vaughn
+8839 Alma Rd
+Austin, OK 15838
+...
 
 
 ## Motivation
