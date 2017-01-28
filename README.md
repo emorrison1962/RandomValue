@@ -2,7 +2,7 @@
 
 ## Synopsis
 
-RandomValue is a utility library that contains classes for generating random data. I've used it countless times of the last 10 years, for unit testing and data generation.
+RandomValue is a utility library that contains classes for generating random data. I've used it countless times over the last 10 years, for unit testing and data generation.
 
 ## Code Example
 
