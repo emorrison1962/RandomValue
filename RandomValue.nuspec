@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<title>$title$</title>
+		<authors>Eric Morrison</authors>
+		<owners>$author$</owners>
+		<projectUrl>https://github.com/emorrison1962/RandomValue</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A set of utilities to generate random data for testing, data generation or when you just need to get Random.</description>
+		<releaseNotes>Initial publish.</releaseNotes>
+		<copyright>Copyright 2017</copyright>
+		<tags>random data generation testing</tags>
+	</metadata>
+	<files>
+		<file src="bin\Debug\*.pdb" target="lib\net45" />
+	</files>
+</package>
